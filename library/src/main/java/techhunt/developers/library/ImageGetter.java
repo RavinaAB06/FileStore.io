@@ -65,7 +65,7 @@ public class ImageGetter {
     }
 
     @SuppressLint("CheckResult")
-    public void getAllImages(Context context, MediaCallback callback) {
+    public static void getAllImages(Context context, MediaCallback callback) {
         SQLiteDatabase db = HandlingAlbums.getInstance(context).getReadableDatabase();
         CPHelper.getAllMediaFromMediaStore(context, AlbumsHelper.getSortingMode(), AlbumsHelper.getSortingOrder())
                 .subscribeOn(Schedulers.io())

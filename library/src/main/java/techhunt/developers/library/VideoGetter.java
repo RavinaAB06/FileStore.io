@@ -69,7 +69,7 @@ public class VideoGetter {
     }
 
     @SuppressLint("CheckResult")
-    public void getAllImages(Context context, MediaCallback callback) {
+    public static void getAllVideos(Context context, MediaCallback callback) {
         SQLiteDatabase db = HandlingAlbums.getInstance(context).getReadableDatabase();
         CPHelper.getAllVideosFromMediaStore(context, AlbumsHelper.getSortingMode(), AlbumsHelper.getSortingOrder())
                 .subscribeOn(Schedulers.io())
