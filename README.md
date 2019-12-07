@@ -106,6 +106,23 @@ public void fatchData() {
          }
      });
 
+     /**All Images*/
+     ImageGetter.getAllImages(MainActivity.this, new ImageGetter.MediaCallback() {
+        @Override
+         public void onMediaAdd(Media media) {
+
+         }
+
+         @Override
+         public void onError(Throwable throwable) {
+
+         }
+
+         @Override
+         public void onComplete() {
+
+         }
+     });
 
      /**Video Albums*/
      VideoGetter.getVideoAlbums(MainActivity.this, false, new VideoGetter.AlbumCallback() {
@@ -138,6 +155,24 @@ public void fatchData() {
 
                  }
              });
+         }
+     });
+     
+     /**All Videos*/
+     VideoGetter.getAllVideos(MainActivity.this, new VideoGetter.MediaCallback() {
+        @Override
+         public void onMediaAdd(Media media) {
+
+         }
+
+         @Override
+         public void onError(Throwable throwable) {
+
+         }
+
+         @Override
+         public void onComplete() {
+
          }
      });
 
