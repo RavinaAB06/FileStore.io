@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete() {
                 /**Video From Album*/
-                VideoGetter.getAlbumsImage(MainActivity.this, videoAlbums, new VideoGetter.MediaCallback() {
+                VideoGetter.getAlbumsVideo(MainActivity.this, videoAlbums, new VideoGetter.MediaCallback() {
                     @Override
                     public void onMediaAdd(Media media) {
 

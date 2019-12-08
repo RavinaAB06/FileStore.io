@@ -47,7 +47,7 @@ public class VideoGetter {
     }
 
     @SuppressLint("CheckResult")
-    public static void getAlbumsImage(Context context, Album album, MediaCallback callback) {
+    public static void getAlbumsVideo(Context context, Album album, MediaCallback callback) {
         CPHelper.getVideo(context, album)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
